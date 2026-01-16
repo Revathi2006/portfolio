@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <style>
+        body{
+
+            background-color: burlywood;
+        }
+        p{
+
+            font-size: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .contact{
+
+            background-color: black;
+            width:100%;
+            height:10vh;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            position:fixed;
+            top:0;
+        }
+        .info{
+
+            text-align: center;
+
+            
+            background-color: bisque;
+            width:40vw;
+            min-height:50vh;
+            
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20vh;
+            padding:20px;
+            border-radius: 50px;
+
+        }
+        .info p{
+
+            font-size:80px;
+        }
+        .info a{
+
+            font-size: 50px;
+        }
+        .Name{
+
+            width:30vw;
+            min-height:50vh;
+
+            display:flex;
+            justify-content:start;
+            align-items:center;
+            margin-top:5vh;
+            font-size: 50px;
+            flex-direction: column;
+            gap:40px;
+            background-color:bisque;
+            margin-left:auto;
+            margin-right:auto;
+            color:black;
+            border-radius: 30px;
+            padding: 20px;
+            
+
+        }
+        .Name h1{
+
+            margin-bottom:50px;
+        }
+        .Name label{
+
+            font-size: 80px;
+            text-align: center;
+            color:black;
+            margin-bottom: 50px;
+        }
+       .Name input{
+
+             width:20vw;
+             height:3vh;
+             text-align: left;
+             padding-top:20px;
+             border-radius: 20px;
+             
+             font-size:50px;
+       }
+       ::placeholder{
+
+          font-size:50px;
+          
+       }
+       #textarea{
+
+           width:20vw;
+           height:10vh;
+           font-size: 50px;
+           border-radius:20px;
+           margin-top: 50px;
+         
+
+       }
+       #Submit{
+
+          width:10vw;
+          height:5vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 30px;
+          background-color: blue;
+          color:white;
+
+          
+       }
+
+
+       
+        @media(max-width:600px){
+
+            .contact h1{
+
+                font-size: 40px;
+            }
+            .contact{
+
+                 width:100%;
+                height:auto;
+
+
+            }
+            .info{
+
+                width:80%;
+               height:auto;
+            }
+            .info p{
+
+                font-size: 20px;
+            }
+            .info a{
+
+                font-size: 10px;
+            }
+           .Name{
+
+                width:80%;
+                height:auto;
+                text-align: center;
+                
+                
+
+                 
+            }
+            .Name h1{
+
+                font-size: 40px;
+            }
+            .Name label{
+
+                 font-size:20px;
+            }
+            .Name input{
+
+                width:40vw;
+                height:3vh;
+                text-align: center;
+                font-size: 20px;
+                
+                border-radius: 5px;
+
+                 
+            }
+             ::placeholder{
+
+               font-size:20px;
+               
+          
+             }
+             #textarea{
+
+              width:40vw;
+              height:10vh;
+              font-size: 30px;
+              border-radius:5px;
+              margin-top: 50px;
+         
+
+          }
+          #Submit{
+
+            width:20vw;
+            height:5vh;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+
+              
+          }
+
+        }
+         @media(max-width:900px){
+
+            .contact h1{
+
+                font-size: 40px;
+            }
+            .contact{
+
+                 width:100%;
+                height:auto;
+
+
+            }
+            .info{
+
+                width:80%;
+               height:auto;
+            }
+            .info p{
+
+                font-size: 20px;
+            }
+            .info a{
+
+                font-size: 10px;
+            }
+            .Name{
+
+                width:80%;
+                height:auto;
+                text-align: center;
+                
+                
+
+                 
+            }
+            .Name h1{
+
+                font-size: 40px;
+            }
+            .Name label{
+
+                 font-size:20px;
+            }
+            .Name input{
+
+                width:40vw;
+                height:3vh;
+                text-align: center;
+                font-size: 20px;
+                
+                border-radius: 5px;
+
+                 
+            }
+             ::placeholder{
+
+               font-size:20px;
+               
+          
+             }
+             #textarea{
+
+              width:40vw;
+              height:10vh;
+              font-size: 30px;
+              border-radius:5px;
+              margin-top: 50px;
+         
+
+          }
+          #Submit{
+
+            width:20vw;
+            height:5vh;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+
+              
+          }
+        }
+        
+         @media(max-width:1300px){
+
+            .contact h1{
+
+                font-size: 40px;
+            }
+            .contact{
+
+                 width:100%;
+                height:auto;
+
+
+            }
+            .info{
+
+                width:80%;
+               height:auto;
+            }
+            .info p{
+
+                font-size: 20px;
+            }
+            .info a{
+
+                font-size: 10px;
+            }
+            .Name{
+
+                width:50%;
+                height:auto;
+                text-align: center;
+                
+                
+
+                 
+            }
+            .Name h1{
+
+                font-size: 40px;
+            }
+            .Name label{
+
+                 font-size:20px;
+            }
+            .Name input{
+
+                width:40vw;
+                height:3vh;
+                text-align: center;
+                font-size: 20px;
+                
+                border-radius: 5px;
+
+                 
+            }
+             ::placeholder{
+
+               font-size:20px;
+               
+          
+             }
+             #textarea{
+
+              width:40vw;
+              height:10vh;
+              font-size: 30px;
+              border-radius:5px;
+              margin-top: 50px;
+         
+
+          }
+          #Submit{
+
+            width:20vw;
+            height:5vh;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+
+              
+          }
+
+        }
+        
+
+
+      </style>
+
+
+   </head>
+   <body>
+
+        <div class="contact">
+             <h1>Contact Me</h1>
+        </div>
+        <div class="info">
+
+        
+
+<p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+         width="80"
+         style="vertical-align: middle;">
+    Email:
+</p>
+
+<a href="mailto:revathis19112006@gmail.com">
+    <p>revathis19112006@gmail.com</p>
+</a>
+
+
+            <p>📞Phone: +91-7550104986</p>
+            
+            <p>📍Address: Chennai,TamilNadu India</p>
+            <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+         width="80"
+         style="vertical-align: middle;">
+    LinkedIn:
+</p>
+
+<a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">
+    <p>https://www.linkedin.com/in/revathi-s-1702a832a/</p>
+</a>
+<p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+         width="80"
+         style="vertical-align: middle;">
+    GitHub:
+</p>
+
+<a href="https://github.com/your-github-username" target="_blank">
+    <p>https://github.com/Revathi2006</p>
+</a>
+
+        
+
+
+
+        </div>
+    <div class="Name">
+
+        <h1>Contact me directly here....</h1>
+        <form>
+
+              <label>Name:</label>
+              <input id="name" type="text" name="Name" placeholder="Name">
+              <br><br>
+              <label>Email:</label>
+              <input id='email' type="email" name="Email" placeholder="Enter your email">
+              <br><br>
+              <label>Subject:</label>
+              <input id='subject' type="text" name="Subject" placeholder="Subject">
+
+              <br><br>
+              <label>Message:</label>
+              <textarea id="textarea"  placeholder="Enter your message"></textarea>
+
+              <br><br>
+              <button id="Submit"  onclick='submitForm()'>Submit</button>
+
+
+        </form>
+    </div>
+    <script>
+
+    function submitForm(){
+
+         const name=document.getElementById('name').value;
+         const email=document.getElementById('email').value;
+         const sub=document.getElementById('subject').value;
+         const message=document.getElementById('textarea').value;
+         
+
+         function isValid(email){
+
+             const regex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              
+
+              return regex.test(email);
+         }
+         if(name==""){
+
+            alert('Enter your name!');
+
+         }
+         else if(email==""){
+
+            alert('Enter your email!');
+         }
+         else if(!isValid(email)){
+
+            alert('Enter correct email format!!');
+         }
+         else if(sub==""){
+
+            alert('Enter your subject!');
+         }
+         else if(message==""){
+
+            alert('Enter your message!');
+         }
+         else{
+            localStorage.setItem("contactdetails",JSON.stringify({name,email,sub}));
+         alert('Contact details saved to local storage!!');
+
+             alert('Message sent to Revathi S sucessfully!');
+         }
+         
+
+     }
+     window.onload=function(){
+
+            const data=JSON.parse(localStorage.getItem("contactdetails"));
+            if(data){
+
+                document.getElementById('name').value=data.name;
+                document.getElementById('email').value=data.email;
+
+
+            }
+
+        };
+
+    </script>
+
+
+
+   </body>
+</html>
