@@ -1,341 +1,251 @@
 <!DOCTYPE html>
 <html>
-
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
        <style>
-
         body{
-
-            background-color:burlywood;
-            
-
-            
-
-
+            background-color:#0a0a0a;
         }
         .cert {
-
           display:flex;
           flex-direction: column;
           justify-content: center;
           align-items:center;
-          
-          background-color:rgb(39, 7, 27);
+          background: linear-gradient(135deg, #cdd707 0%, #764ba2 100%);
           position: fixed;
-         width:100%;
-         top:0;
-        z-index:10;
-        
-          
+          width:100%;
+          top:0;
+          z-index:10;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
        
         .cert h1{
-
             font-size: 200px;
-            
-            
-            color:blanchedalmond;
-  
-            
-
-            
+            color:#ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .cert1{
-
             display:flex;
             justify-content:center;
             align-items:center;
-            background-color: black;
-            color:white;
+            background: linear-gradient(145deg, #1e1e1e, #2d2d2d);
+            color:#ffffff;
             width: 30vw;
             height: 20vh;
-            
             margin-top:20vh;
             margin-left:auto;
             margin-right:auto;
             flex-direction:column;
-            border:solid;
-            border-radius:100px;
+            border:none;
+            border-radius:25px;
             overflow:hidden;
-            transition: transform 0.25s ease-in-out;
-            
-            
-
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .cert1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: 0.5s;
+        }
+        .cert1:hover::before {
+            left: 100%;
         }
          .cert1:hover{
-
-
-             transform: scale(1.05);
+             transform: scale(1.05) translateY(-5px);
+             background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+             box-shadow: 0 15px 35px rgba(0,0,0,0.4);
         }
         .cert1 h1{
-
-             
              font-size: 70px;
-             
-
+             color:#64ffda;
+             text-shadow: 0 2px 10px rgba(100,255,218,0.3);
         }
         .cert1 h2{
-
           font-size:50px;
+          color:#ff6b6b;
+          text-shadow: 0 2px 10px rgba(255,107,107,0.3);
         }
         .cert1 h3{
-
            font-size:30px;
+           color:#4ecdc4;
+           text-shadow: 0 2px 10px rgba(78,205,196,0.3);
         }
         #certbutton{
-
           width:200px;
           height:100px;
-          background-color: darkblue;
+          background: linear-gradient(45deg, #ff6b6b, #ffa8a8);
           color:white;
           font-size:30px;
-          border-radius: 25px;
-
+          border-radius: 50px;
+          transition: all 0.3s ease-in-out;
+          border:none;
+          cursor: pointer;
+          font-weight: bold;
+          box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+        }
+        #certbutton:hover{
+            background: linear-gradient(45deg, #ff4757, #ff6b6b);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,107,107,0.4);
         }
         @media (max-width:600px){
-
-
            .cert{
-
               height:auto;
               width:100%;
-              
               text-align: center;
            }
-
             .cert h1{
-
                 font-size: 20px;
             }
             .cert1{
-
                width: 80%;
               height: auto;
               border-radius: 20px;
               padding: 20px;
-
-
-
             }
             .cert1 h1{
-
                font-size:15px;
             }
             .cert1 h2{
-
                font-size: 15px;
             }
             .cert1 h3{
-
               font-size: 15px;
             }
             #certbutton{
-
                width:100px;
               height:auto;
               font-size: 15px;
               padding: 10px;
-
-                
             }
-
         }
         @media (max-width:900px){
-
-
            .cert{
-
               height:auto;
               width:100%;
-              
               text-align: center;
            }
-
             .cert h1{
-
                 font-size: 40px;
             }
             .cert1{
-
                width: 80%;
               height: auto;
               border-radius: 20px;
               padding: 20px;
-
-
-
             }
             .cert1 h1{
-
                font-size:15px;
             }
             .cert1 h2{
-
                font-size: 15px;
             }
             .cert1 h3{
-
               font-size: 15px;
             }
             #certbutton{
-
                width:100px;
               height:auto;
               font-size: 15px;
               padding: 10px;
-
-                
             }
-
         }
         @media (max-width:1300px){
-
-
            .cert{
-
               height:auto;
               width:100%;
-              
               text-align: center;
            }
-
             .cert h1{
-
                 font-size: 40px;
             }
             .cert1{
-
                width: 50%;
               height: auto;
               border-radius: 20px;
               padding: 20px;
-
-
-
             }
             .cert1 h1{
-
                font-size:15px;
             }
             .cert1 h2{
-
                font-size: 15px;
             }
             .cert1 h3{
-
               font-size: 15px;
             }
             #certbutton{
-
                width:100px;
               height:auto;
               font-size: 15px;
               padding: 10px;
-
-                
             }
-
         }
-
-
-
-       
-
       </style>
-
-
-
-
     </head>
     <body>
-
        <div class="cert">
-
-        
-
-
             <h1>My certifications</h1>
-        
-            
-
-
-
-
-
-
       </div>
-       <div class="cert1">
 
+       <div class="cert1">
                <h1>Responsive web design</h1>
                <h2>From free code camp</h2>
-                <br>
-                <button onclick="window.location.href='https://www.freecodecamp.org/certification/fcc466a17aa-8ce3-42d4-bf74-41ae5da65199/responsive-web-design'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='https://www.freecodecamp.org/certification/fcc466a17aa-8ce3-42d4-bf74-41ae5da65199/responsive-web-design'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
-               <h1>
-               Data structures and algorithm 
-                    using python</h1>
+               <h1>Data structures and algorithm using python</h1>
                <h3>From NPTEL</h3>
-                <br>
-                <br>
-                <button onclick="window.location.href='images/nptel.jpg'" id="certbutton">View credential</button>
-
+               <br><br>
+               <button onclick="window.location.href='images/nptel.jpg'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
                <h1>SQL basic certification</h1>
                <h2>From Hackerrank</h2>
-                <br>
-                <button onclick="window.location.href='images/sql.jpg'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='images/sql.jpg'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
-               <h1>Oracle certified professional:Java SE 21 Developer</h1>
+               <h1>Oracle certified professional: Java SE 21 Developer</h1>
                <h2>From Oracle</h2>
-                <br>
-                <button onclick="window.location.href='images/oracle.png'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='images/oracle.png'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
                <h1>Introduction to machine learning</h1>
                <h2>From AWS</h2>
-                <br>
-                <button onclick="window.location.href='images/AWS.png'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='images/AWS.png'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
                <h1>Java programming for beginners</h1>
                <h2>From Ibm</h2>
-                <br>
-                <button onclick="window.location.href='images/ibm.png'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='images/ibm.png'" id="certbutton">View credential</button>
         </div>
 
          <div class="cert1">
-
                <h1>Python for data science</h1>
                <h2>From Ibm</h2>
-                <br>
-                <button onclick="window.location.href='images/ibmpython.png'" id="certbutton">View credential</button>
-
+               <br>
+               <button onclick="window.location.href='images/ibmpython.png'" id="certbutton">View credential</button>
         </div>
-
-
-        
-
-
     </body>
 </html>
